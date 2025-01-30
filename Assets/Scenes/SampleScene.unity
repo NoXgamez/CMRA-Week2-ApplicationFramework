@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 969104507}
   - component: {fileID: 969104506}
+  - component: {fileID: 969104508}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -261,6 +262,23 @@ Transform:
   - {fileID: 748432248}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &969104508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969104505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  m_PlanePrefab: {fileID: 305851492750067542, guid: c7ea00268b6f79e479c4c8cfc62a5a26, type: 3}
+  m_DetectionMode: 3
 --- !u!1 &2050119146
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +508,17 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &2076672118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1888649146465255099, guid: cbc421414c4a8064a8be162c60a8ec36, type: 3}
+  m_PrefabInstance: {fileID: 4471320997081870040}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2d9adf370da7b4590da26aded564f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4471320997081870040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -498,6 +527,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 580732272632388156, guid: cbc421414c4a8064a8be162c60a8ec36, type: 3}
+      propertyPath: planeManager
+      value: 
+      objectReference: {fileID: 969104508}
     - target: {fileID: 1726617016700184719, guid: cbc421414c4a8064a8be162c60a8ec36, type: 3}
       propertyPath: m_LocalPosition.x
       value: 491.30402
@@ -538,6 +571,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1888649146465255099, guid: cbc421414c4a8064a8be162c60a8ec36, type: 3}
+      propertyPath: planeManager
+      value: 
+      objectReference: {fileID: 969104508}
     - target: {fileID: 8729952988002116843, guid: cbc421414c4a8064a8be162c60a8ec36, type: 3}
       propertyPath: m_Name
       value: InteractionManager
@@ -599,6 +636,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7902791008355228386, guid: a8d9bf835067fba45868644453b56c0b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2076672118}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
